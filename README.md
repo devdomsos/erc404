@@ -65,6 +65,7 @@ Deploys the MyERC404 contract to the specified network.
 ```bash
 npx hardhat deploy:my-erc404 --network sepolia
 npx hardhat deploy:my-erc404 --network mainnet
+npx hardhat deploy:my-erc404 --network pulseChain 
 ```
 
 This task will deploy the `MyERC404` contract using the specified network and output the deployed contract address.
@@ -97,6 +98,7 @@ Whitelists the owner of the contract.
 ```bash
 npx hardhat whitelist-owner:my-erc404 --network sepolia
 npx hardhat whitelist-owner:my-erc404 --network mainnet
+npx hardhat whitelist-owner:my-erc404 --network pulseChain 
 ```
 
 This task will whitelist the deployer/owner of the contract. Whitelisting will exempt them from token minting and burning during transfers

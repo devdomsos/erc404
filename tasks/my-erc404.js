@@ -11,7 +11,7 @@ const {
 task('deploy:my-erc404', 'Deploy MyERC404 Contract', async (_, { ethers }) => {
   const accounts = await ethers.getSigners();
   const signer = accounts[0];
-
+    console.log("Signer: ", signer)
   const myErc404 = await ethers.deployContract(CONTRACT_NAMES.MY_ERC404, [
     // owner address
     signer.address,

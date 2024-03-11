@@ -50,6 +50,12 @@ module.exports = {
       chainId: 80001,
       gas: 'auto',
     },
+    pulseChain: {
+      url: `https://rpc.pulsechain.com`,
+      accounts: [`${ACCOUNT_PRIVATE_KEY}`],
+      chainId: 369,
+      gas: 'auto',
+    },
     // add more networks here
   },
   etherscan: {
